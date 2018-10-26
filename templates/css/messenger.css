@@ -1,0 +1,50 @@
+body {
+      font-family: 'HelveticaNeue-Light';
+    }
+    .msg {
+      margin-top: 2px;
+      padding-left: 3px;
+      width: 300px;
+      background-color: #efefef;
+      border-radius: 5px;
+    }
+    #username, #text {
+      margin: 5px 0px;
+    }
+    #text{
+      width: 300px;
+      font-family: 'HelveticaNeue-Light';
+    }
+    #post {
+      padding: 0.5em 1em;
+      background-color: #50b1ff;
+      border: none;
+      color: #FFF;
+
+    }
+    #login, #logout {
+      padding: 0.5em 1em;
+      background-color: #DD4B39;
+      border: none;
+      color: #FFF;
+      cursor: pointer;
+    }
+    #logout {
+      background-color: #50b1ff;
+    }
+
+    #results{
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+      height: 502px;
+      width: 420px;
+      overflow-y: auto;
+      border: 1px solid;
+    }
+    #time{
+      text-align: right;
+      padding-bottom: 0px;
+      padding-right: 2px;
+      font-size: 10px;
+    }

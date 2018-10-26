@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="content-language" content="en" />
+
+  
+  <title>Currency Tools</title>
+  <link rel="stylesheet" type="text/css" href="/css/home.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/numeral.js/2.0.6/numeral.min.js"></script>
+  <script src="/javascript/conversion.js" type="text/javascript"></script>
+  <script src="/javascript/currenciesList.js" type="text/javascript"></script>
+  <script src="/javascript/cloning.js" type="text/javascript"></script>
+
+
+
+  
+
+</head>
+
+	<body>
+    	<!-- "%s" -->
+
+    	<h1>CryptoCurrency Tools</h1>
+
+		<h2 id="messengerHeader">Messenger</h2>
+		<div id = "messengerContainer">
+    		<a href="https://project-guy.appspot.com/messenger">Enter Messenger</a>
+    	</div>
+
+    	<h2 id="tickersHeader">Tickers</h2>
+
+    	<div id = "tickerContainer">
+
+    		<div id = "whatCurrency">
+    			<select id="currencyList" onchange="setTickers()"></select>
+    		</div>
+
+    		<div id = "tickers">
+
+    			<span id = "btc">BTC:  </span>
+    			<span id = "BTCValue"></span>
+
+    			<span id = "ltc">LTC:  </span>
+    			<span id = "LTCValue"></span>
+
+    			<span id = "eth">ETH:  </span>
+    			<span id = "ETHValue"></span>
+
+    			<span id = "xrp">XRP:  </span>
+    			<span id = "XRPValue"></span>
+
+    			<span id = "xvg">XVG:  </span>
+    			<span id = "XVGValue"></span>
+
+
+    		</div>
+
+    	</div>
+
+
+    	<h2>Standard Conversions</h2>
+
+    	<div id= "conversionsContainer">
+	    	<div id = "conversionContainer">
+				
+				<input type="number" id="CURRENT_FROM_VALUE"placeholder="Enter amount" />
+				<select id="CURRENT_FROM"></select>
+				<span id="to">to</span>
+				<select id="CURRENT_TO"></select>
+				<button onclick="getCurrencyConversion('CURRENT_FROM_VALUE','CURRENT_FROM','CURRENT_TO','CURRENT_VALUE')" id="convertButton">Convert</button>
+				<input type="text" id="CURRENT_VALUE" readonly placeholder="Press Convert button"/>
+			</div>
+
+		</div>
+
+		<div id= "cloneButton">
+			<button onclick="clone()" id="cloneButton">Add a row</button>
+		</div>
+
+		<h2>Crypto Currency Conversions</h2>
+
+		<h2>Calculate Value after Percentage</h2>
+
+		<div id = "percentageContainer">
+			<input type="number" id="NumberValue"placeholder="Enter Value" />
+			<span id="withPercentage">with Percentage</span>
+			<input type="number" id="NumberPercentage"placeholder="Enter Percent"/>
+
+		</div>
+
+		<div id= "percentageValue">
+			<button onclick="calculatePercentage()" id= "percentageButton">Calculate Value</button>
+			<input type="text" id="NumberResult" readonly placeholder="Press button"/>
+		</div>
+
+		
+
+	
+   </body>
+
+</html>

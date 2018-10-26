@@ -1,0 +1,14 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+handlers:
+- url: /images # in the html can access from localhost:8080/images
+  static_dir: templates/images
+- url: /javascript
+  static_dir: templates/javascript
+- url: /css
+  static_dir: templates/css
+- url: /json
+  static_dir: templates/json
+- url: /.*
+  script: main.app
